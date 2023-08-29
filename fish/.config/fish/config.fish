@@ -13,9 +13,11 @@ if status is-interactive
 	set fish_greeting
 	set -x EDITOR "nvim"
 	set -x VISUAL "nvim"
+	set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
 	##STARTUP COMMANDS
 	#fm6000 -n -c cyan -f ~/.config/pixelart/space_invader.txt
-	pfetch
+	#pfetch
+	flowetch
 	##INIT STARSHIP PROMPT
 	starship init fish | source
 	##PATH
