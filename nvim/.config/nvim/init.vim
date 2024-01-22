@@ -4,10 +4,10 @@ set nocompatible
 set encoding=UTF-8
 set guifont=Jetbrains-Mono:h11
 " Set Dein base path (required)
-let s:dein_base = '/home/alc111/.local/share/dein'
+let s:dein_base = '/home/aleon/.local/share/dein'
 
 " Set Dein source path (required)
-let s:dein_src = '/home/alc111/.local/share/dein/repos/github.com/Shougo/dein.vim'
+let s:dein_src = '/home/aleon/.local/share/dein/repos/github.com/Shougo/dein.vim'
 
 " Set Dein runtime path (required)
 execute 'set runtimepath+=' . s:dein_src

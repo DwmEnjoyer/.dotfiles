@@ -21,7 +21,8 @@ if status is-interactive
 	##INIT STARSHIP PROMPT
 	starship init fish | source
 	##PATH
-	fish_add_path /home/alc111/.cargo/bin
-	fish_add_path /home/alc111/.deno/bin
-	fish_add_path /home/alc111/go/bin
+	fish_add_path /home/$USER/.cargo/bin
+	fish_add_path /home/$USER/.deno/bin
+	fish_add_path /home/$USER/go/bin
+	. "/home/aleon/.acme.sh/acme.sh.env"
 end
