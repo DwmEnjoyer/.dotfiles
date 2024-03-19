@@ -9,11 +9,15 @@ if status is-interactive
 	function vim
 		nvim $argv
 	end
+	function kubectl
+		minikube kubectl -- $argv
+	end
 	##VARIABLES
 	set fish_greeting
 	set -x EDITOR "nvim"
 	set -x VISUAL "nvim"
 	set -x STARSHIP_CONFIG ~/.config/starship/starship.toml
+	set -x QT_QPA_PLATFORM wayland
 	##STARTUP COMMANDS
 	#fm6000 -n -c cyan -f ~/.config/pixelart/space_invader.txt
 	#pfetch
@@ -24,5 +28,6 @@ if status is-interactive
 	fish_add_path /home/$USER/.cargo/bin
 	fish_add_path /home/$USER/.deno/bin
 	fish_add_path /home/$USER/go/bin
+	fish_add_path /home/$USER/.pulumi/bin
 	. "/home/aleon/.acme.sh/acme.sh.env"
 end
